@@ -1,0 +1,22 @@
+{
+  "name": "w3lifer/google-drive",
+  "keywords": [
+    "google",
+    "drive"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.0"
+  },
+  "authors": [
+    {
+      "name": "Roman Grinyov",
+      "email": "w3lifer@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "w3lifer\\google\\": ""
+    }
+  }
+}
