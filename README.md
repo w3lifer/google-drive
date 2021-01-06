@@ -30,4 +30,6 @@ $googleDrive->upload(
         '<folder id>', // Optional
     ]
 );
+
+$folderId = $googleDrive->createFolder('Folder name');
 ```
