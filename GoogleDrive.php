@@ -95,4 +95,16 @@ class GoogleDrive
         );
         return $result->id;
     }
+
+    /**
+     * @see https://stackoverflow.com/a/58611113/4223982
+     */
+    public function createFolder(string $name)
+    {
+        $file = new Google_Service_Drive_DriveFile();
+        $file->setName($name);
+        $file->setMimeType('application/vnd.google-apps.folder');
+        $result = $this->service->files->create($file);
+        return $result->id;
+    }
 }
