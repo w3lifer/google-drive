@@ -25,9 +25,9 @@ $googleDrive = new GoogleDrive([
 
 $googleDrive->upload(
     __DIR__ . '/test.txt',  // Required
-    [
-        '<folder id>', // Optional
-        '<folder id>', // Optional
+    [ // Optional
+        '<folder id>',
+        '<folder id>',
     ]
 );
 ```
