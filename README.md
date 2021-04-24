@@ -18,12 +18,12 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use w3lifer\google\GoogleDrive;
 
-$fileId = $googleDrive = new GoogleDrive([
+$googleDrive = new GoogleDrive([
     'pathToCredentials' => __DIR__ . '/credentials.json', // Required
     'pathToToken' => __DIR__ . '/token.json', // Required
 ]);
 
-$googleDrive->upload(
+$fileId = $googleDrive->upload(
     __DIR__ . '/test.txt',  // Required
     [ // Optional
         '<folder id>',
