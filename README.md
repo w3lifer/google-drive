@@ -18,7 +18,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use w3lifer\google\GoogleDrive;
 
-$googleDrive = new GoogleDrive([
+$fileId = $googleDrive = new GoogleDrive([
     'pathToCredentials' => __DIR__ . '/credentials.json', // Required
     'pathToToken' => __DIR__ . '/token.json', // Required
 ]);
